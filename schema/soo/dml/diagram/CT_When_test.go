@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/unidoc/unioffice/schema/soo/dml/diagram"
+	"github.com/techone577/unioffice/schema/soo/dml/diagram"
 )
 
 func TestCT_WhenConstructor(t *testing.T) {

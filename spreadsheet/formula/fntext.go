@@ -14,8 +14,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/unidoc/unioffice/internal/wildcard"
-	"github.com/unidoc/unioffice/spreadsheet/format"
+	"github.com/techone577/unioffice/internal/wildcard"
+	"github.com/techone577/unioffice/spreadsheet/format"
 )
 
 func init() {
@@ -162,7 +162,7 @@ func Exact(args []Result) Result {
 
 type parsedSearchObject struct {
 	findText string
-	text string
+	text     string
 	position int
 }
 
@@ -248,7 +248,7 @@ func Findb(ctx Context, ev Evaluator, args []Result) Result {
 	for i := range text {
 		if i != 0 {
 			add := 1
-			if i - lastIndex > 1 {
+			if i-lastIndex > 1 {
 				add = 2
 			}
 			stepsCounter += add
@@ -517,7 +517,7 @@ func Searchb(ctx Context, ev Evaluator, args []Result) Result {
 	for i := range text {
 		if i != 0 {
 			add := 1
-			if i - lastIndex > 1 {
+			if i-lastIndex > 1 {
 				add = 2
 			}
 			stepsCounter += add
@@ -617,9 +617,9 @@ func Value(args []Result) Result {
 }
 
 type parsedReplaceObject struct {
-	text string
-	startPos int
-	length int
+	text          string
+	startPos      int
+	length        int
 	textToReplace string
 }
 

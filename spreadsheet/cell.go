@@ -15,11 +15,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/common"
-	"github.com/unidoc/unioffice/schema/soo/sml"
-	"github.com/unidoc/unioffice/spreadsheet/format"
-	"github.com/unidoc/unioffice/spreadsheet/reference"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/common"
+	"github.com/techone577/unioffice/schema/soo/sml"
+	"github.com/techone577/unioffice/spreadsheet/format"
+	"github.com/techone577/unioffice/spreadsheet/reference"
 )
 
 const iso8601Format = "2006-01-02T15:04:05Z07:00"
@@ -198,11 +198,16 @@ func (c Cell) getLabelPrefix() string {
 	sid := *c.x.SAttr
 	cs := c.w.StyleSheet.GetCellStyle(sid)
 	switch cs.xf.Alignment.HorizontalAttr {
-	case sml.ST_HorizontalAlignmentLeft: return "'"
-	case sml.ST_HorizontalAlignmentRight: return "\""
-	case sml.ST_HorizontalAlignmentCenter: return "^"
-	case sml.ST_HorizontalAlignmentFill: return "\\"
-	default: return ""
+	case sml.ST_HorizontalAlignmentLeft:
+		return "'"
+	case sml.ST_HorizontalAlignmentRight:
+		return "\""
+	case sml.ST_HorizontalAlignmentCenter:
+		return "^"
+	case sml.ST_HorizontalAlignmentFill:
+		return "\\"
+	default:
+		return ""
 	}
 }
 

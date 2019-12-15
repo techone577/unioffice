@@ -13,13 +13,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/unidoc/unioffice/spreadsheet/formula"
-	"github.com/unidoc/unioffice/spreadsheet/reference"
+	"github.com/techone577/unioffice/spreadsheet/formula"
+	"github.com/techone577/unioffice/spreadsheet/reference"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/common"
-	"github.com/unidoc/unioffice/schema/soo/sml"
-	"github.com/unidoc/unioffice/vmldrawing"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/common"
+	"github.com/techone577/unioffice/schema/soo/sml"
+	"github.com/techone577/unioffice/vmldrawing"
 )
 
 // Sheet is a single sheet within a workbook.
@@ -719,7 +719,7 @@ func (s *Sheet) setArray(origin string, arr formula.Result) error {
 		sr := s.Row(cref.RowIdx + uint32(ir))
 		for ic, val := range row {
 			cell := sr.Cell(reference.IndexToColumn(cref.ColumnIdx + uint32(ic)))
-			if val.Type != formula.ResultTypeEmpty  {
+			if val.Type != formula.ResultTypeEmpty {
 				cell.SetCachedFormulaResult(val.String())
 			}
 		}

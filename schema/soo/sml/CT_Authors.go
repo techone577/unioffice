@@ -12,7 +12,7 @@ package sml
 import (
 	"encoding/xml"
 
-	"github.com/unidoc/unioffice"
+	"github.com/techone577/unioffice"
 )
 
 type CT_Authors struct {

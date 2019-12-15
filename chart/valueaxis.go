@@ -8,9 +8,9 @@
 package chart
 
 import (
-	"github.com/unidoc/unioffice/drawing"
-	"github.com/unidoc/unioffice/schema/soo/dml"
-	crt "github.com/unidoc/unioffice/schema/soo/dml/chart"
+	"github.com/techone577/unioffice/drawing"
+	"github.com/techone577/unioffice/schema/soo/dml"
+	crt "github.com/techone577/unioffice/schema/soo/dml/chart"
 )
 
 type ValueAxis struct {

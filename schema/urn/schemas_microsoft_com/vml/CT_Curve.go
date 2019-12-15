@@ -14,11 +14,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/schema/soo/ofc/sharedTypes"
-	"github.com/unidoc/unioffice/schema/urn/schemas_microsoft_com/office/excel"
-	"github.com/unidoc/unioffice/schema/urn/schemas_microsoft_com/office/powerpoint"
-	"github.com/unidoc/unioffice/schema/urn/schemas_microsoft_com/office/word"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/schema/soo/ofc/sharedTypes"
+	"github.com/techone577/unioffice/schema/urn/schemas_microsoft_com/office/excel"
+	"github.com/techone577/unioffice/schema/urn/schemas_microsoft_com/office/powerpoint"
+	"github.com/techone577/unioffice/schema/urn/schemas_microsoft_com/office/word"
 )
 
 type CT_Curve struct {

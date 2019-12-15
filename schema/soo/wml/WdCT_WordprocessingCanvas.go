@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/schema/soo/dml"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/schema/soo/dml"
 )
 
 type WdCT_WordprocessingCanvas struct {

@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/unidoc/unioffice/schema/soo/sml"
-	"github.com/unidoc/unioffice/spreadsheet"
+	"github.com/techone577/unioffice/schema/soo/sml"
+	"github.com/techone577/unioffice/spreadsheet"
 )
 
 func TestCell(t *testing.T) {

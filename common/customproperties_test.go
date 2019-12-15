@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/unidoc/unioffice/common"
-	"github.com/unidoc/unioffice/document"
-	"github.com/unidoc/unioffice/testhelper"
-	"github.com/unidoc/unioffice/zippkg"
-	"github.com/unidoc/unioffice/schema/soo/ofc/docPropsVTypes"
+	"github.com/techone577/unioffice/common"
+	"github.com/techone577/unioffice/document"
+	"github.com/techone577/unioffice/schema/soo/ofc/docPropsVTypes"
+	"github.com/techone577/unioffice/testhelper"
+	"github.com/techone577/unioffice/zippkg"
 )
 
 func TestMarshalCustomProperties(t *testing.T) {
@@ -181,9 +181,9 @@ func ExampleCustomProperties() {
 
 	// And change them as well
 	cp.SetPropertyAsLpwstr("Another text property", "My text value") // text
-	cp.SetPropertyAsI4("Another integer number property", 42) // int23
-	cp.SetPropertyAsR8("Another float number property", 3.14) // float64
-	cp.SetPropertyAsDate("Another date property", time.Now()) // date
+	cp.SetPropertyAsI4("Another integer number property", 42)        // int23
+	cp.SetPropertyAsR8("Another float number property", 3.14)        // float64
+	cp.SetPropertyAsDate("Another date property", time.Now())        // date
 
 	doc.SaveToFile("document.docx")
 }

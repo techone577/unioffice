@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/unidoc/unioffice/document"
+	"github.com/techone577/unioffice/document"
 )
 
 func main() {
@@ -27,9 +27,9 @@ func main() {
 
 	// And change them as well
 	cp.SetPropertyAsLpwstr("Another text property", "My text value") // text
-	cp.SetPropertyAsI4("Another integer number property", 42) // int23
-	cp.SetPropertyAsR8("Another float number property", 3.14) // float64
-	cp.SetPropertyAsDate("Another date property", time.Now()) // date
+	cp.SetPropertyAsI4("Another integer number property", 42)        // int23
+	cp.SetPropertyAsR8("Another float number property", 3.14)        // float64
+	cp.SetPropertyAsDate("Another date property", time.Now())        // date
 
 	doc.SaveToFile("document_customized.docx")
 
@@ -38,9 +38,9 @@ func main() {
 
 	cpNew := docNew.GetOrCreateCustomProperties()
 	cpNew.SetPropertyAsLpwstr("Another text property", "My text value") // text
-	cpNew.SetPropertyAsI4("Another integer number property", 42) // int23
-	cpNew.SetPropertyAsR8("Another float number property", 3.14) // float64
-	cpNew.SetPropertyAsDate("Another date property", time.Now()) // date
+	cpNew.SetPropertyAsI4("Another integer number property", 42)        // int23
+	cpNew.SetPropertyAsR8("Another float number property", 3.14)        // float64
+	cpNew.SetPropertyAsDate("Another date property", time.Now())        // date
 
 	docNew.SaveToFile("document_new.docx")
 }

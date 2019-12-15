@@ -7,7 +7,7 @@
 
 package document
 
-import "github.com/unidoc/unioffice/schema/soo/wml"
+import "github.com/techone577/unioffice/schema/soo/wml"
 
 // Fonts allows manipulating a style or run's fonts.
 type Fonts struct {

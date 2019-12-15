@@ -10,10 +10,10 @@ package spreadsheet
 import (
 	"fmt"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/measurement"
-	"github.com/unidoc/unioffice/schema/soo/sml"
-	"github.com/unidoc/unioffice/spreadsheet/reference"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/measurement"
+	"github.com/techone577/unioffice/schema/soo/sml"
+	"github.com/techone577/unioffice/spreadsheet/reference"
 )
 
 // Row is a row within a spreadsheet.
@@ -110,8 +110,8 @@ func (r Row) Cells() []Cell {
 			continue
 		}
 		currentIndex := int(ref.ColumnIdx)
-		if currentIndex - lastIndex > 1 {
-			for col := lastIndex + 1; col < currentIndex;  col++ {
+		if currentIndex-lastIndex > 1 {
+			for col := lastIndex + 1; col < currentIndex; col++ {
 				ret = append(ret, r.AddNamedCell(reference.IndexToColumn(uint32(col))))
 			}
 		}

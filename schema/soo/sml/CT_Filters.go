@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/schema/soo/ofc/sharedTypes"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/schema/soo/ofc/sharedTypes"
 )
 
 type CT_Filters struct {

@@ -12,11 +12,11 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"path/filepath"
 	"os"
+	"path/filepath"
 
-	"github.com/unidoc/unioffice"
-	"github.com/unidoc/unioffice/zippkg"
+	"github.com/techone577/unioffice"
+	"github.com/techone577/unioffice/zippkg"
 )
 
 // Read reads a workbook from an io.Reader(.xlsx).

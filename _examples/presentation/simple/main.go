@@ -4,11 +4,11 @@ package main
 import (
 	"log"
 
-	"github.com/unidoc/unioffice/color"
-	"github.com/unidoc/unioffice/measurement"
-	"github.com/unidoc/unioffice/schema/soo/dml"
+	"github.com/techone577/unioffice/color"
+	"github.com/techone577/unioffice/measurement"
+	"github.com/techone577/unioffice/schema/soo/dml"
 
-	"github.com/unidoc/unioffice/presentation"
+	"github.com/techone577/unioffice/presentation"
 )
 
 func main() {
